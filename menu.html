@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu - Subha's Food Corner</title>
+
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="logo">Subha's Food Corner</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact Us </a>
+        </nav>
+
+    </header>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero">
+
+        <h1>Our Delicious Menu</h1>
+
+        <p>Explore Our Food and Enjoy Every Bite!</p>
+
+    </section>
+
+
+    <!-- Food Menu -->
+    <section class="menu-section" id="menu">
+
+        <h2>Our Food Items</h2>
+
+        <p class="menu-subtitle">
+            Choose Your Favourite Food
+        </p>
+
+        <div class="food-container" id="foodItems">
+
+            <!-- Food items will come from JavaScript -->
+
+        </div>
+
+    </section>
+
+
+    <!-- Cart Section -->
+    <section class="cart-summary" id="order">
+
+        <h2>Your Cart</h2>
+
+        <div id="cartItems">
+            Your cart is empty.
+        </div>
+
+        <h3>Total: ₹<span id="totalPrice">0</span></h3>
+
+        <div class="cart-buttons">
+
+            <button class="clear-btn" onclick="clearCart()">
+                Clear Cart
+            </button>
+
+            <button class="order-btn" onclick="placeOrder()">
+                Place Order
+            </button>
+
+        </div>
+
+        <p id="orderMessage"></p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+    <div class="footer-content">
+        <h3>Subha's Food Corner</h3>
+        <p>Good Food • Good Mood</p>
+        <p>📍 New Town, Kolkata | 📞 +91 98765 43210</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="menu.html">Menu</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <p class="copyright">&copy; 2026 Subha's Food Corner. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+    <script src="menu.js"></script>
+
+</body>
+
+</html>

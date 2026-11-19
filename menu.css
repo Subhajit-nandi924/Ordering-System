@@ -1,0 +1,339 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf4;
+    color: #333;
+}
+header {
+    background-color: #351807;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff9b32;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ff9b32;
+}
+
+/* Menu Hero */
+.menu-hero {
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1600");
+
+    background-size: cover;
+    background-position: center;
+
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.menu-hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.menu-hero p {
+    font-size: 18px;
+}
+
+
+/* Menu Section */
+.menu-section {
+    padding: 50px 7%;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 32px;
+    color: #3b2115;
+}
+
+.menu-subtitle {
+    color: #777;
+    margin: 12px 0 30px;
+}
+
+
+/* Food Container */
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* Food Card */
+.food-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.food-card h3 {
+    margin: 15px 0 10px;
+    color: #3b2115;
+}
+
+.food-card p {
+    color: #e67e00;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.food-card button {
+    width: 100%;
+    padding: 12px;
+
+    background: #ff9800;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.food-card button:hover {
+    background: #e68900;
+}
+
+
+/* Cart Section */
+.cart-summary {
+    width: 86%;
+    margin: 50px auto;
+    padding: 30px;
+
+    background: white;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cart-summary h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #3b2115;
+    margin-bottom: 25px;
+}
+
+#cartItems {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/* Cart Item */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 15px;
+    margin-bottom: 15px;
+
+    background: #fff8f0;
+    border-radius: 8px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-info {
+    flex: 1;
+}
+
+.cart-info h3 {
+    margin-bottom: 8px;
+    color: #3b2115;
+}
+
+.cart-info p {
+    margin: 5px 0;
+}
+
+
+/* Cart Buttons */
+.cart-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.cart-buttons button {
+    padding: 9px 13px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background: #444;
+}
+
+.cart-buttons button:hover {
+    opacity: 0.8;
+}
+
+
+/* Total */
+.cart-summary > h3 {
+    text-align: right;
+    margin: 25px 0;
+    color: #3b2115;
+    font-size: 23px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #351807;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff6b35; /* Warm food-themed accent color */
+}
+
+footer p {
+    font-size: 16px;
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin: 15px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff6b35;
+}
+
+footer .copyright {
+    font-size: 14px;
+    color: #888888;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+
+/* Clear and Order */
+.clear-btn {
+    background: #dc3545 !important;
+}
+
+.order-btn {
+    background: #ff9800 !important;
+}
+
+
+/* Message */
+#orderMessage {
+    text-align: center;
+    color: green;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+
+    .food-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .menu-hero h1 {
+        font-size: 28px;
+    }
+
+    .food-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-summary {
+        width: 92%;
+        padding: 18px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .cart-summary > h3 {
+        font-size: 20px;
+    }
+
+}
